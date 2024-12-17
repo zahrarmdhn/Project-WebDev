@@ -20,6 +20,7 @@ let booksUrl = computed(() => {
     url.searchParams.append("page", pageNumber.value);
 
     if(search.value){
+        pageNumber.value=1;
         url.searchParams.append("search", search.value);
     }
     
