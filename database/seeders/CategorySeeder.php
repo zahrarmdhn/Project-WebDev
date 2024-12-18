@@ -14,13 +14,13 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         // Insert categories into the database
-        DB::table('category')->insert([
+        DB::table('categories')->insert([
+            ['category' => 'History'],
+            ['category' => 'Biography'],
+            ['category' => 'Science'],
+            ['category' => 'Fantasy'],
             ['category' => 'Fiction'],
             ['category' => 'Non-Fiction'],
-            ['category' => 'Science'],
-            ['category' => 'History'],
-            ['category' => 'Fantasy'],
-            ['category' => 'Biography'],
         ]);
     }
 }
